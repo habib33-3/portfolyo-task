@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation, } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import useUserData from "../../hook/useUserData";
 import TestimonialSlide from "./TestimonialSlide/TestimonialSlide";
 import filterEnabled from "../../util/filterEnabled";
@@ -17,7 +17,7 @@ const Testimonials = () => {
   const testimonialData = filterEnabled(testimonials);
 
   return (
-    <div className="w-full">
+    <section className="w-full mt-10">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -38,7 +38,7 @@ const Testimonials = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

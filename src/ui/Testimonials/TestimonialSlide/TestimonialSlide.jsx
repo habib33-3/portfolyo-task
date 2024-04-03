@@ -13,7 +13,7 @@ function TestimonialSlide({ testimonial }) {
   } = testimonial;
 
   return (
-    <section className="px-2 py-10 md:px-0">
+    <div className="px-2 py-10 md:px-0 ">
       <div className="mx-auto max-w-4xl">
         <div className="md:flex md:items-center md:justify-center md:space-x-14">
           <div className="relative h-48 w-48 flex-shrink-0">
@@ -33,7 +33,7 @@ function TestimonialSlide({ testimonial }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

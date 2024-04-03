@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <main className="bg-[#111111ec] min-h-screen w-full flex flex-col justify-center items-center">
+      <main className="bg-[#111111ec] min-h-screen w-full ">
         <App />
       </main>
     </QueryClientProvider>
