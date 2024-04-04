@@ -9,7 +9,7 @@ const Hero = () => {
         name,
         title,
         subTitle,
-        description,
+        quote,
         avatar: { url: img },
       },
     },
@@ -38,7 +38,9 @@ const Hero = () => {
           className="size-48 rounded-full mx-auto"
         />
         <p className="text-lg text-textDescription text-justify font-medium  lg:px-5">
-          {description}
+          {'"'}
+          {quote}
+          {'"'}
         </p>
       </div>
     </section>

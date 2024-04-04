@@ -1,5 +1,6 @@
 import Loading from "./components/Loading/Loading";
 import useUserData from "./hook/useUserData";
+import About from "./ui/About/About";
 import Hero from "./ui/Hero/Hero";
 import Navbar from "./ui/Navbar/Navbar";
 import Projects from "./ui/Projects/Projects";
@@ -17,6 +18,7 @@ const App = () => {
     <>
       {/* <Navbar /> */}
       <Hero />
+      <About />
       <Skills />
       <Projects />
       <Testimonials />
