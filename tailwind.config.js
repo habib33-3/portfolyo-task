@@ -6,9 +6,9 @@ export default {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        textPrimary: "#ecfdf5",
-        textAccent: "#10b981",
-        textDescription: "#bae6fd",
+        textPrimary: "#718096", // Gray
+        textAccent: "#4A5568", // Cool gray
+        textDescription: "#718096",
       },
     },
   },

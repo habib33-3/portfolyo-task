@@ -21,7 +21,7 @@ function ProjectCard({ project }) {
         alt={title}
         className="w-full h-full mx-auto  object-fill object-center transition-opacity duration-300 group-hover:scale-105"
       />
-      <div className="absolute inset-0 flex items-center justify-center bg-gray-400 bg-opacity-70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div className="absolute inset-0 flex items-center justify-center bg-gray-400 bg-opacity-90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <span className="flex flex-col items-center justify-center space-y-5">
           <h3 className="text-textPrimary text-3xl  text-center">{title}</h3>
           <button
