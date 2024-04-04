@@ -6,7 +6,7 @@ SectionTitle.propTypes = {
 
 function SectionTitle({ title }) {
   return (
-    <h1 className="text-4xl font-bold text-white leading-tight text-center">
+    <h1 className="text-4xl font-bold text-white leading-tight text-center my-5">
       <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400 animate-pulse">
         {title}
       </span>
