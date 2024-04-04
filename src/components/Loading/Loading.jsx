@@ -2,7 +2,7 @@ import ReactLoading from "react-loading";
 
 const Loading = () => {
   return (
-    <div className="flex flex-col items-center justify-center my-10">
+    <div className=" h-screen w-screen flex flex-col items-center justify-center my-10">
       <ReactLoading
         type={"spin"}
         color={"red"}
