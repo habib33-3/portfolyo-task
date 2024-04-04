@@ -9,7 +9,6 @@ const About = () => {
       about: {
         name,
         description,
-
         alternateAvatars: [{ url: img }],
       },
     },

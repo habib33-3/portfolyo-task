@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="max-w-8xl w-full mx-auto  flex justify-around space-y-2 items-center flex-col lg:flex-row p-1"
+      className="max-w-8xl w-full mx-auto h-[80vh]  flex justify-around space-y-2 items-center flex-col lg:flex-row p-1"
     >
       <div className="flex flex-col items-center justify-center w-full space-y-2 lg:w-1/2">
         <h2 className="text-textPrimary text-5xl font-bold uppercase text-center">
@@ -37,7 +37,7 @@ const Hero = () => {
           alt="avatar"
           className="size-48 rounded-full mx-auto"
         />
-        <p className="text-lg text-textDescription text-justify font-medium  lg:px-5">
+        <p className="text-2xl my-3 text-textAccent text-justify font-bold  lg:px-5">
           {'"'}
           {quote}
           {'"'}

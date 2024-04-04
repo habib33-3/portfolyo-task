@@ -6,6 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import useUserData from "../../hook/useUserData";
 import TestimonialSlide from "./TestimonialSlide/TestimonialSlide";
 import filterEnabled from "../../util/filterEnabled";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const Testimonials = () => {
   const { data: userData } = useUserData();
@@ -18,6 +19,8 @@ const Testimonials = () => {
 
   return (
     <section className="w-full mt-10">
+      <SectionTitle title={"Testimonials"} />
+
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

@@ -1,3 +1,4 @@
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Loading from "./components/Loading/Loading";
 import useUserData from "./hook/useUserData";
 import About from "./ui/About/About";
@@ -6,12 +7,17 @@ import Navbar from "./ui/Navbar/Navbar";
 import Projects from "./ui/Projects/Projects";
 import Skills from "./ui/Skills/Skills";
 import Testimonials from "./ui/Testimonials/Testimonials";
+import Timeline from "./ui/Timeline/Timeline";
 
 const App = () => {
-  const { isLoading } = useUserData();
+  const { isLoading, isError, error } = useUserData();
 
   if (isLoading) {
     return <Loading />;
+  }
+
+  if (isError) {
+    return <ErrorPage error={error} />;
   }
 
   return (
@@ -19,6 +25,7 @@ const App = () => {
       {/* <Navbar /> */}
       <Hero />
       <About />
+      <Timeline />
       <Skills />
       <Projects />
       <Testimonials />
