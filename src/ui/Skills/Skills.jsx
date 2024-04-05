@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <section className="max-w-7xl mx-auto ">
       <SectionTitle title={"Skills"} />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center justify-center space-x-3 space-y-3 mx-auto w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center justify-center gap-3 mx-auto w-full">
         {sortedSkills.map((skill) => (
           <SkillCard
             key={skill._id}

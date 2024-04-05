@@ -15,11 +15,11 @@ const ProjectCard = ({ project }) => {
       <img
         src={img}
         alt={title}
-        className="w-full h-full mx-auto object-fill object-center transition-opacity duration-300 group-hover:scale-105"
+        className="w-full h-full mx-auto object-fill object-center transition-opacity duration-300 group-hover:opacity-50 group-hover:scale-105"
       />
       <div className="absolute inset-0 flex items-center justify-center bg-gray-400 bg-opacity-90 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <span className="flex flex-col items-center justify-center space-y-5">
-          <h3 className="text-textPrimary text-3xl text-center">{title}</h3>
+          <h3 className="text-gray-700 font-bold text-3xl text-center">{title}</h3>
           <button
             onClick={() => setIsModalOpen(true)}
             className="px-3 py-2 rounded-md bg-gradient-to-r from-amber-500 to-amber-700 w-max text-stone-100 text-md font-medium transition duration-300 ease-in-out overflow-hidden relative hover:from-blue-500 hover:to-blue-700 hover:scale-105"

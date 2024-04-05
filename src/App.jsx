@@ -2,6 +2,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Loading from "./components/Loading/Loading";
 import useUserData from "./hook/useUserData";
 import About from "./ui/About/About";
+import ContactForm from "./ui/ContactForm/ContactForm";
 import Hero from "./ui/Hero/Hero";
 import Navbar from "./ui/Navbar/Navbar";
 import Projects from "./ui/Projects/Projects";
@@ -31,6 +32,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Testimonials />
+      <ContactForm />
     </>
   );
 };

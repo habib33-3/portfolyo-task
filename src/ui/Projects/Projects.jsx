@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <section className="max-w-7xl w-full mx-auto ">
       <SectionTitle title={"Projects"} />
-      <div className="grid grid-cols-1  space-y-10 md:grid-cols-2 lg:grid-cols-3 items-center justify-center h-screen overflow-y-auto scroll-smooth">
+      <div className="grid grid-cols-1  gap-5 md:grid-cols-2 lg:grid-cols-3 items-center justify-center h-screen overflow-y-auto scroll-smooth">
         {sortedProject.map((project) => (
           <ProjectCard
             key={project._id}
