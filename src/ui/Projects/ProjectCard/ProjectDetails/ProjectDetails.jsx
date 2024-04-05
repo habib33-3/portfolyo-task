@@ -3,13 +3,7 @@ import { FiGlobe } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 
-ProjectDetails.propTypes = {
-  isModalOpen: PropTypes.bool,
-  setIsModalOpen: PropTypes.func,
-  project: PropTypes.object,
-};
-
-function ProjectDetails({ setIsModalOpen, project }) {
+const ProjectDetails = ({ setIsModalOpen, project }) => {
   const {
     title,
     image: { url: img },
@@ -74,6 +68,11 @@ function ProjectDetails({ setIsModalOpen, project }) {
       </div>
     </div>
   );
-}
+};
+
+ProjectDetails.propTypes = {
+  setIsModalOpen: PropTypes.func.isRequired,
+  project: PropTypes.object.isRequired,
+};
 
 export default ProjectDetails;

@@ -1,10 +1,6 @@
 import PropTypes from "prop-types";
 
-SkillCard.propTypes = {
-  skill: PropTypes.object,
-};
-
-function SkillCard({ skill }) {
+const SkillCard = ({ skill }) => {
   const {
     name,
     image: { url: img },
@@ -28,6 +24,10 @@ function SkillCard({ skill }) {
       </div>
     </div>
   );
-}
+};
+
+SkillCard.propTypes = {
+  skill: PropTypes.object,
+};
 
 export default SkillCard;

@@ -3,12 +3,7 @@ import "react-vertical-timeline-component/style.min.css";
 import PropTypes from "prop-types";
 import TimelineElement from "./TimelineElement/TimelineElement";
 
-TimelineSector.propTypes = {
-  data: PropTypes.array,
-  icon: PropTypes.node,
-};
-
-function TimelineSector({ data, icon }) {
+const TimelineSector = ({ data, icon }) => {
   return (
     <div>
       <VerticalTimeline layout="1-column">
@@ -22,6 +17,11 @@ function TimelineSector({ data, icon }) {
       </VerticalTimeline>
     </div>
   );
-}
+};
+
+TimelineSector.propTypes = {
+  data: PropTypes.array,
+  icon: PropTypes.node,
+};
 
 export default TimelineSector;

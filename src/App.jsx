@@ -5,6 +5,7 @@ import About from "./ui/About/About";
 import Hero from "./ui/Hero/Hero";
 import Navbar from "./ui/Navbar/Navbar";
 import Projects from "./ui/Projects/Projects";
+import Services from "./ui/Services/Services";
 import Skills from "./ui/Skills/Skills";
 import Testimonials from "./ui/Testimonials/Testimonials";
 import Timeline from "./ui/Timeline/Timeline";
@@ -25,6 +26,7 @@ const App = () => {
       {/* <Navbar /> */}
       <Hero />
       <About />
+      <Services />
       <Timeline />
       <Skills />
       <Projects />

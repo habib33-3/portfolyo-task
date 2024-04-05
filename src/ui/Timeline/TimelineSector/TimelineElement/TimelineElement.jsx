@@ -2,12 +2,7 @@ import PropTypes from "prop-types";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import formateDate from "../../../../util/formateDate";
 
-TimelineElement.propTypes = {
-  element: PropTypes.object,
-  icon: PropTypes.node,
-};
-
-function TimelineElement({ element, icon }) {
+const TimelineElement = ({ element, icon }) => {
   const {
     company_name,
     summary,
@@ -47,6 +42,11 @@ function TimelineElement({ element, icon }) {
       </p>
     </VerticalTimelineElement>
   );
-}
+};
+
+TimelineElement.propTypes = {
+  element: PropTypes.object,
+  icon: PropTypes.node,
+};
 
 export default TimelineElement;

@@ -1,10 +1,6 @@
 import PropTypes from "prop-types";
 
-TestimonialSlide.propTypes = {
-  testimonial: PropTypes.object,
-};
-
-function TestimonialSlide({ testimonial }) {
+const TestimonialSlide = ({ testimonial }) => {
   const {
     name,
     position,
@@ -28,13 +24,19 @@ function TestimonialSlide({ testimonial }) {
             <blockquote>
               <p className="text-xl text-textDescription">“{review}”</p>
             </blockquote>
-            <p className="mt-7 text-lg font-semibold text-textPrimary">{name}</p>
+            <p className="mt-7 text-lg font-semibold text-textPrimary">
+              {name}
+            </p>
             <p className="mt-1 text-base text-textAccent">{position}</p>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+TestimonialSlide.propTypes = {
+  testimonial: PropTypes.object,
+};
 
 export default TestimonialSlide;
